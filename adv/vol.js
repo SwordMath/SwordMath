@@ -1,15 +1,15 @@
-  for(i=1; i<100;i++){
   var n = Math.floor(Math.random() * 10);
+  var n0 = Math.floor(Math.random() * 10);
+  var n1 = Math.floor(Math.random() * 10);
 
   
-if(n/2 == 2 ||n/3 == 3||n/4 == 4||n/5 == 5||n/6 == 6||n/7 == 7||n/8 == 8||n/9 == 9||n/10 == 10||n/11 == 11||n/12 == 12)
-{
-  var q = Math.sqrt(n)
+
+  var q = n*n0*n1
   var msg = new SpeechSynthesisUtterance();
-  msg.text = "What is the square root of " + n;
+  msg.text = "What is the volume of a rectangular prism that is " + n+" by "+n0+" by "+n1;
   window.speechSynthesis.speak(msg);
   
-  var a = prompt("What is the square root of " + n);
+  var a = prompt("What is the volume of a rectangular prism that is " + n+" by "+n0+" by "+n1);
   if (a == q){
     alert("Good job");
     msg.text = "Good job";
@@ -23,6 +23,3 @@ if(n/2 == 2 ||n/3 == 3||n/4 == 4||n/5 == 5||n/6 == 6||n/7 == 7||n/8 == 8||n/9 ==
     setTimeout(() => {  window.location.href = './index.html'; }, 2000);
    
   }
-}break
-continue  
-}
