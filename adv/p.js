@@ -1,6 +1,6 @@
-  var n = Math.floor(Math.random() * 10);
+  var n = Math.floor(Math.random() * 100/10);
 
-  var n2 = Math.floor(Math.random() * 10); 
+  var n2 = Math.floor(Math.random() * 100/20); 
 
   var q = Math.pow(n, n2)
   var msg = new SpeechSynthesisUtterance();
