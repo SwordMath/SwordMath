@@ -1,6 +1,6 @@
-  var n = Math.floor(Math.random() * 10);
-  var n0 = Math.floor(Math.random() * 10);
-  var n1 = Math.floor(Math.random() * 10);
+  var n = Math.floor(Math.random() * 10+1);
+  var n0 = Math.floor(Math.random() * 10+1);
+  var n1 = Math.floor(Math.random() * 10+1);
 
   
 
