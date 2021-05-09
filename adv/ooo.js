@@ -4,12 +4,12 @@
 
   
 
-  var q = n*n0*n1
+  var q = n+n0*n1
   var msg = new SpeechSynthesisUtterance();
-  msg.text = "What is the volume of a rectangular prism that is " + n+" by "+n0+" by "+n1;
+  msg.text = "What is the answer " + n+" + "+n0+" x "+n1;
   window.speechSynthesis.speak(msg);
   
-  var a = prompt("What is the volume of a rectangular prism that is " + n+" by "+n0+" by "+n1);
+  var a = prompt("What is the answer " + n+" + "+n0+" x "+n1);
   if (a == q){
     alert("Good job");
     msg.text = "Good job";
