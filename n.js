@@ -4,7 +4,11 @@
 
   var q = n + n2;
   var msg = new SpeechSynthesisUtterance();
-  msg.text = "What is " + n + " plus " +  n2 + "?";
+  if ( n2 =< 0) 
+  {
+  n2 = -n2
+  } 
+  msg.text = "What is " + n + " minus " +  n2 + "?";
   window.speechSynthesis.speak(msg);
   
   var a = prompt("What is " + n + " + " +  n2 + "?");
