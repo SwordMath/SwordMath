@@ -2,12 +2,13 @@
 
   var n2 = Math.floor(Math.random() * 100); 
 
-  var q = n + n2;
+  
   var msg = new SpeechSynthesisUtterance();
   if ( n2 =< 0) 
   {
   n2 == -n2
   } 
+ var q = n + n2;
   msg.text = "What is " + n + " minus " +  n2 + "?";
   window.speechSynthesis.speak(msg);
   
