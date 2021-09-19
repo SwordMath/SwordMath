@@ -6,12 +6,12 @@
   var msg = new SpeechSynthesisUtterance();
   if ( n2 =< 0) 
   {
-  n2 = -n2
+  n2 == -n2
   } 
   msg.text = "What is " + n + " minus " +  n2 + "?";
   window.speechSynthesis.speak(msg);
   
-  var a = prompt("What is " + n + " + " +  n2 + "?");
+  var a = prompt("What is " + n + " - " +  n2 + "?");
   if (a == q){
     alert("Good job");
     msg.text = "Good job";
